@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web con Tailwind</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center font-bold rounded-full">LOGO</div>
+        <span class="ml-3 text-xl font-semibold">Mi Empresa</span>
+      </div>
+      <!-- Menu -->
+      <nav>
+        <ul class="flex space-x-6 font-medium">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#mision" class="hover:text-blue-600">Misión</a></li>
+          <li><a href="#vision" class="hover:text-blue-600">Visión</a></li>
+          <li><a href="#historia" class="hover:text-blue-600">Historia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="py-16 bg-blue-600 text-white text-center">
+    <h1 class="text-4xl font-bold mb-4">Bienvenidos a Nuestra Empresa</h1>
+    <p class="max-w-2xl mx-auto">Ofrecemos productos de calidad y un servicio comprometido con nuestros clientes.</p>
+  </section>
+
+  <!-- Misión -->
+  <section id="mision" class="py-16 max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Misión</h2>
+    <p>Nuestra misión es brindar productos innovadores que satisfagan las necesidades de nuestros clientes con responsabilidad y compromiso.</p>
+  </section>
+
+  <!-- Visión -->
+  <section id="vision" class="py-16 bg-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Visión</h2>
+      <p>Ser una empresa líder en el mercado, reconocida por su calidad, innovación y confianza.</p>
+    </div>
+  </section>
+
+  <!-- Historia -->
+  <section id="historia" class="py-16 max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Historia</h2>
+    <p>Desde nuestros inicios, hemos trabajado con pasión para crecer y ofrecer lo mejor a nuestros clientes.</p>
+  </section>
+
+  <!-- Nuestros Productos -->
+  <section id="productos" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Nuestros Productos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">Producto 1</h3>
+          <p>Descripción breve del producto.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">Producto 2</h3>
+          <p>Descripción breve del producto.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl mb-2">Producto 3</h3>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contáctanos -->
+  <section id="contacto" class="py-16 bg-gray-200">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contáctanos</h2>
+      <form class="bg-white p-6 rounded-lg shadow space-y-4">
+        <input type="text" placeholder="Nombre" class="w-full border p-2 rounded">
+        <input type="email" placeholder="Correo" class="w-full border p-2 rounded">
+        <textarea placeholder="Mensaje" class="w-full border p-2 rounded"></textarea>
+        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
