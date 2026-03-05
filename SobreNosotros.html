@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dexter: Mano Robótica</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="fotos/IMG-20260122-WA0006.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 32px;
+      font-weight: bold;
+      color: #32363a;
+    }
+
+    .logo img {
+      height: 55px;
+      margin-right: 12px;
+      border-radius: 8px;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 17px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-menu a:hover {
+      color: #004d99;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .intro h2 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 25px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .intro-image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .intro-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    section p {
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .mission-vision {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .mission-vision .text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .mission-vision .image-placeholder {
+      flex: 1;
+      min-width: 300px;
+      background-color: #f0f0f0;
+      border: 1px dashed #aaa;
+      border-radius: 10px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .mission-vision img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 50px 0;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .intro, .mission-vision {
+        flex-direction: column;
+      }
+
+      .intro h2, section h2 {
+        text-align: center;
+        font-size: 28px;
+      }
+
+      .intro p, section p {
+        font-size: 16px;
+      }
+
+      .image-placeholder {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="fotos/IMG-20260122-WA0006.jpg" alt="Logo Dexter">
+        DEXTER
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html"><b>Menú Principal</b></a></li>
+        <li><a href="SobreNosotros.html"><b>Sobre Nosotros</b></a></li>
+        <li><a href="Contactanos.html"><b>Contáctanos</b></a></li>
+        <li><a href="NuestrosProductos.html"><b>Nuestros Productos</b></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="main-content">
+
+    <div class="intro">
+      <div class="intro-text">
+        <h2>Proyecto DEXTER: Prótesis de Mano Robótica</h2>
+        <p>DEXTER es un proyecto escolar innovador enfocado en el desarrollo de una prótesis de mano robótica capaz de replicar movimientos reales de la mano humana mediante el uso de sensores, programación y diseño tecnológico.</p>
+        <p>Nuestro objetivo es integrar conocimientos de electrónica, programación y diseño 3D para crear una solución funcional, accesible y orientada a mejorar la calidad de vida de personas con amputaciones, al mismo tiempo que fomentamos el aprendizaje práctico y el trabajo en equipo.</p>
+      </div>
+      <div class="intro-image">
+        <img src="fotos/IMG-20260122-WA0006.jpg" alt="Prótesis de mano robótica DEXTER">
+      </div>
+    </div>
+
+    <hr>
+
+    <section>
+      <h2>Misión</h2>
+      <div class="mission-vision">
+        <div class="text">
+          <p>Desarrollar una prótesis de mano accesible, funcional y biomecánicamente avanzada, que permita a personas con amputaciones recuperar movimientos naturales, mejorar su calidad de vida y fortalecer su independencia, mediante el uso innovador de tecnología, diseño ergonómico y enfoque humanitario.</p>
+        </div>
+        <div class="image-placeholder">
+          <!-- Reemplaza con tu imagen real cuando la tengas -->
+          <img src="fotos/mision.jpg" alt="Imagen representativa de la Misión" style="display: none;">
+         
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Visión</h2>
+      <div class="mission-vision">
+        <div class="text">
+          <p>Ser un referente educativo y tecnológico en el desarrollo de soluciones protésicas innovadoras dentro de la comunidad educativa y social, promoviendo la inclusión, el avance científico y la transferencia de conocimiento para que personas con discapacidad tengan acceso a prótesis asequibles y de alta funcionalidad.</p>
+        </div>
+        <div class="image-placeholder">
+          <!-- Reemplaza con tu imagen real cuando la tengas -->
+          <img src="fotos/vision.jpg" alt="Imagen representativa de la Visión" style="display: none;">
+          
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Historia</h2>
+      <p>El proyecto DEXTER surge como una iniciativa escolar motivada por el interés en la tecnología y su aplicación en la solución de problemas reales. Desde el inicio el objetivo fue comprender cómo la ingeniería y la programación pueden contribuir a mejorar la calidad de vida de las personas que han perdido una mano.</p>
+      <p>Durante la etapa de investigación el equipo analizó el funcionamiento de la mano humana y los movimientos básicos que permiten realizar acciones cotidianas como sujetar objetos o realizar gestos simples. Este análisis permitió identificar la complejidad del sistema muscular y articular que debía ser replicado de forma artificial.</p>
+      <p>Con estos conocimientos se inició el diseño de una prótesis de mano robótica desarrollada con materiales accesibles y tecnología de bajo costo. Mediante el uso de impresión 3D, sensores y programación se logró crear un sistema capaz de detectar movimientos reales de la mano y reproducirlos de manera controlada en la prótesis.</p>
+      <p>El desarrollo del proyecto también fortaleció el aprendizaje práctico de los estudiantes en áreas como electrónica, diseño digital y programación. Al mismo tiempo fomentó el trabajo en equipo, la responsabilidad y la conciencia social sobre la importancia de la tecnología inclusiva.</p>
+      <p>Actualmente DEXTER representa un proyecto en constante evolución que combina innovación, educación y compromiso social. Su propósito es seguir mejorando el diseño y la funcionalidad de la prótesis manteniendo siempre un enfoque humano y educativo.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Dexter - Mano Robótica. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
