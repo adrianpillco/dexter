@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dexter: Mano Robótica</title>
+  <title>Dexter: Mano Robótica - Sobre Nosotros</title>
+  
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="fotos/IMG-20260122-WA0006.jpg">
 
@@ -74,16 +75,17 @@
     /* Contenido principal */
     .main-content {
       max-width: 1200px;
-      margin: 30px auto;
-      padding: 0 20px;
+      margin: 40px auto;
+      padding: 0 25px;
     }
 
+  
     .intro {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      align-items: flex-start;
-      margin-bottom: 50px;
+      align-items: flex-start;   
+      margin-bottom: 60px;
     }
 
     .intro-text {
@@ -112,35 +114,28 @@
     .intro-image img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
     section {
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
 
     section h2 {
       font-size: 32px;
       font-weight: bold;
-      color: #000;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+      color: #004d99;
+      margin-bottom: 35px;
+      text-align: left;
     }
 
-    section p {
-      font-size: 17px;
-      text-align: justify;
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-
+    
     .mission-vision {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      align-items: flex-start;
+      align-items: center;           /* ← Clave: alinea texto e imagen al mismo nivel */
     }
 
     .mission-vision .text {
@@ -148,40 +143,36 @@
       min-width: 300px;
     }
 
-    .mission-vision .image-placeholder {
+    .mission-vision .image {
       flex: 1;
       min-width: 300px;
-      background-color: #f0f0f0;
-      border: 1px dashed #aaa;
-      border-radius: 10px;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #666;
-      font-size: 16px;
-      text-align: center;
     }
 
     .mission-vision img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .mission-vision p {
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.75;
     }
 
     hr {
       border: none;
       border-top: 1px solid #ddd;
-      margin: 50px 0;
+      margin: 60px 0;
     }
 
     footer {
       background-color: #222;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+      padding: 25px;
+      margin-top: 80px;
     }
 
     /* Responsive */
@@ -201,19 +192,6 @@
       .intro, .mission-vision {
         flex-direction: column;
       }
-
-      .intro h2, section h2 {
-        text-align: center;
-        font-size: 28px;
-      }
-
-      .intro p, section p {
-        font-size: 16px;
-      }
-
-      .image-placeholder {
-        height: 200px;
-      }
     }
   </style>
 </head>
@@ -229,7 +207,7 @@
 
       <ul class="nav-menu">
         <li><a href="index.html"><b>Menú Principal</b></a></li>
-        <li><a href="SobreNosotros.html"><b>Sobre Nosotros</b></a></li>
+        <li><a href="#"><b>Sobre Nosotros</b></a></li>
         <li><a href="Contactanos.html"><b>Contáctanos</b></a></li>
         <li><a href="NuestrosProductos.html"><b>Nuestros Productos</b></a></li>
       </ul>
@@ -238,6 +216,7 @@
 
   <div class="main-content">
 
+    <!-- Sección-->
     <div class="intro">
       <div class="intro-text">
         <h2>Proyecto DEXTER: Prótesis de Mano Robótica</h2>
@@ -251,38 +230,37 @@
 
     <hr>
 
+    <!-- Misión -->
     <section>
       <h2>Misión</h2>
       <div class="mission-vision">
         <div class="text">
           <p>Desarrollar una prótesis de mano accesible, funcional y biomecánicamente avanzada, que permita a personas con amputaciones recuperar movimientos naturales, mejorar su calidad de vida y fortalecer su independencia, mediante el uso innovador de tecnología, diseño ergonómico y enfoque humanitario.</p>
         </div>
-        <div class="image-placeholder">
-          <!-- Reemplaza con tu imagen real cuando la tengas -->
-          <img src="fotos/mision.jpg" alt="Imagen representativa de la Misión" style="display: none;">
-         
+        <div class="image">
+          <img src="fotos/misionn.png" alt="Imagen representativa de la Misión">
         </div>
       </div>
     </section>
 
     <hr>
 
+    <!-- Visión -->
     <section>
       <h2>Visión</h2>
       <div class="mission-vision">
         <div class="text">
           <p>Ser un referente educativo y tecnológico en el desarrollo de soluciones protésicas innovadoras dentro de la comunidad educativa y social, promoviendo la inclusión, el avance científico y la transferencia de conocimiento para que personas con discapacidad tengan acceso a prótesis asequibles y de alta funcionalidad.</p>
         </div>
-        <div class="image-placeholder">
-          <!-- Reemplaza con tu imagen real cuando la tengas -->
-          <img src="fotos/vision.jpg" alt="Imagen representativa de la Visión" style="display: none;">
-          
+        <div class="image">
+          <img src="fotos/vision.png" alt="Imagen representativa de la Visión">
         </div>
       </div>
     </section>
 
     <hr>
 
+    <!-- Historia -->
     <section>
       <h2>Historia</h2>
       <p>El proyecto DEXTER surge como una iniciativa escolar motivada por el interés en la tecnología y su aplicación en la solución de problemas reales. Desde el inicio el objetivo fue comprender cómo la ingeniería y la programación pueden contribuir a mejorar la calidad de vida de las personas que han perdido una mano.</p>
