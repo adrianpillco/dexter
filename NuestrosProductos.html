@@ -109,12 +109,17 @@
       color: #555;
     }
 
-    .producto img {
+    /* ==================== VIDEO PRODUCTO ==================== */
+    .video-container {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .video-container video {
       width: 100%;
-      max-width: 550px;
+      max-width: 520px;           /* Tamaño similar a la imagen anterior */
       border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
 
     .detalles {
@@ -197,7 +202,7 @@
         <li><a href="index.html"><b>Menú Principal</b></a></li>
         <li><a href="SobreNosotros.html"><b>Sobre Nosotros</b></a></li>
         <li><a href="Contactanos.html"><b>Contáctanos</b></a></li>
-        <li><a href="#"><b>Nuestros Productos</b></a></li>   <!-- Estamos aquí -->
+        <li><a href="#"><b>Nuestros Productos</b></a></li>
       </ul>
     </div>
   </header>
@@ -210,8 +215,13 @@
       <h2>Prótesis de Mano</h2>
       <p>Una prótesis hecha a base de filamento impresa en 3D con la especialidad de generar movimientos similares a una mano humana, con la ayuda de motores y sensores.</p>
       
-      <img src="fotos/Mano.jpg" 
-           alt="Prótesis de Mano Dexter">
+      <!-- Video sin controles -->
+      <div class="video-container">
+        <video autoplay muted loop poster="fotos/IMG-20260122-WA0006.jpg">
+          <source src="fotos/Video1.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
 
       <button onclick="mostrarDetalles()">Ver detalles</button>
 
